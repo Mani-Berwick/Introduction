@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manpreet Singh — A Note Before We Meet</title>
+<meta name="description" content="A little about how I work, before we sit down together. Manpreet Singh, Barry Plant Berwick.">
+<script>document.documentElement.className+=' js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F4; --sand:#EDE8DE; --sand-line:#E0D9C9;
+    --midnight:#000047; --ink:#22224a; --ink-soft:#5d5d78;
+    --cobalt:#001FB9; --watermelon:#F92044; --line:#d9d3c4; --on-dark:#F3EFE7; --on-dark-soft:#aeb0cf;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;color:var(--midnight);}
+  a{color:var(--cobalt);}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 clamp(22px,5vw,48px);}
+  .sec{padding:clamp(60px,10vh,110px) 0;}
+  .sec.sand{background:var(--sand);}
+  .sec.dark{background:var(--midnight);color:var(--on-dark);}
+  .eyebrow{font-size:clamp(.68rem,1.5vw,.8rem);letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--cobalt);margin:0 0 16px;}
+  .dark .eyebrow{color:var(--watermelon);}
+  h2.title{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.08;letter-spacing:-.01em;margin:0 0 .5em;}
+  .lead{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(1.15rem,2.8vw,1.6rem);line-height:1.4;color:var(--midnight);margin:0 0 1.2em;max-width:36ch;}
+  .dark .lead{color:var(--on-dark-soft);}
+  p{margin:0 0 1em;}
+
+  html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+  html.js .reveal.in{opacity:1;transform:none;}
+
+  /* hero */
+  .hero{padding:clamp(70px,12vh,130px) 0 clamp(50px,8vh,90px);}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:clamp(30px,5vw,60px);align-items:center;}
+  .hero h1{font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.02;letter-spacing:-.01em;margin:.2em 0 .15em;}
+  .hero .role{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;margin-bottom:22px;}
+  .hero .pos{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(1.2rem,2.8vw,1.6rem);color:var(--midnight);line-height:1.4;margin:0 0 22px;max-width:24ch;}
+  .hero .welcome{color:var(--ink);max-width:40ch;}
+  .rule{width:60px;height:3px;background:var(--watermelon);margin:0 0 24px;}
+  /* portrait */
+  .portrait{position:relative;}
+  .portrait .frame{aspect-ratio:4/5;background:var(--sand);border:1px solid var(--sand-line);border-radius:8px;overflow:hidden;box-shadow:0 24px 60px -30px rgba(0,0,71,.5);display:flex;align-items:center;justify-content:center;}
+  .portrait .frame img{width:100%;height:100%;object-fit:cover;display:block;}
+  .portrait .ph{color:var(--ink-soft);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;text-align:center;}
+  .portrait::after{content:"";position:absolute;right:-12px;bottom:-12px;width:64px;height:64px;border-right:4px solid var(--cobalt);border-bottom:4px solid var(--cobalt);border-radius:0 0 8px 0;}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px;}
+  .step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 24px;}
+  .dark .step{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);}
+  .step .n{font-family:"Playfair Display",serif;font-size:2.2rem;color:var(--cobalt);line-height:1;margin-bottom:12px;}
+  .dark .step .n{color:var(--watermelon);}
+  .step h3{font-size:1.2rem;margin:0 0 8px;}
+  .dark .step h3{color:var(--on-dark);}
+  .step p{font-size:.96rem;color:var(--ink);margin:0;}
+  .dark .step p{color:var(--on-dark-soft);}
+
+  /* approach list */
+  .appr{display:grid;grid-template-columns:1fr 1fr;gap:18px 36px;margin-top:6px;}
+  .appr-i{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;}
+  .appr-i::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--watermelon);margin-top:.5em;flex:none;}
+  .appr-i b{color:var(--midnight);}
+  .appr-i span{display:block;color:var(--ink);font-size:.98rem;}
+
+  /* testimonials */
+  .quotes{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:6px;}
+  blockquote{margin:0;background:#fff;border:1px solid var(--line);border-left:4px solid var(--cobalt);border-radius:8px;padding:26px 28px;}
+  blockquote p{font-family:"Playfair Display",serif;font-style:italic;font-size:1.15rem;line-height:1.45;color:var(--midnight);margin:0 0 14px;}
+  blockquote cite{font-style:normal;font-size:.85rem;letter-spacing:.06em;color:var(--ink-soft);font-weight:700;}
+
+  /* 6 questions cta */
+  .cta{background:var(--cobalt);color:#fff;border-radius:12px;padding:clamp(30px,5vw,48px);display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+  .cta h3{color:#fff;font-size:clamp(1.4rem,3vw,2rem);margin:0 0 8px;}
+  .cta p{color:rgba(255,255,255,.85);margin:0;max-width:46ch;}
+  .cta-btn{background:#fff;color:var(--cobalt);font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:15px 26px;border-radius:99px;text-decoration:none;white-space:nowrap;transition:transform .15s;}
+  .cta-btn:hover{transform:translateY(-2px);}
+
+  /* contact */
+  .contact .phone{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,5vw,2.8rem);color:var(--on-dark);margin:8px 0 4px;}
+  .contact .phone a{color:var(--on-dark);text-decoration:none;}
+  .contact .name{font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--watermelon);font-weight:700;}
+
+  footer{background:var(--midnight);color:var(--on-dark-soft);padding:26px 0;font-size:.84rem;border-top:1px solid rgba(255,255,255,.1);}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  footer b{color:var(--on-dark);}
+
+  @media (max-width:760px){
+    .hero-grid{grid-template-columns:1fr;}
+    .portrait{max-width:320px;}
+    .steps,.appr,.quotes{grid-template-columns:1fr;}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}html.js .reveal{opacity:1;transform:none;}}
+</style>
+</head>
+<body>
+
+<!-- TIP: drop your base64 Barry Plant logo into the hero, and your photo into the portrait frame below. -->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="rule"></div>
+        <p class="eyebrow">A note before we meet</p>
+        <h1>Manpreet Singh</h1>
+        <p class="role">Residential Sales · Barry Plant Berwick</p>
+        <p class="pos">"I help homeowners in Berwick get more for their home than they thought possible."</p>
+        <p class="welcome">Thank you for inviting me to your home. Here's a little about how I work — so by the time we sit down together, it already feels like we've started.</p>
+      </div>
+      <div class="reveal">
+        <div class="portrait">
+          <div class="frame">
+            <!-- Replace this with: <img src="data:image/jpeg;base64,XXXX" alt="Manpreet Singh"> -->
+            <span class="ph">Your photo here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="sec dark">
+  <div class="wrap reveal">
+    <p class="eyebrow">What to expect</p>
+    <h2 class="title">No pressure. Just a proper process.</h2>
+    <p class="lead">Selling your home is a big decision — so I don't rush it, and I don't pitch you a number off the top of my head. Here's how it works.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>We meet</h3>
+        <p>I get to know you and your home. I'll ask about your plans, listen properly, and take it all in. No pitch, no pressure — this first visit is about understanding you.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>I do the work</h3>
+        <p>Then I go away and do the real homework — the recent comparable sales, a pricing strategy, and a marketing plan built specifically for your home.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>I come back</h3>
+        <p>We meet again and I walk you through exactly how I'd sell your home for the best possible price. Then the decision is yours — made with everything in front of you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">How I work</p>
+    <h2 class="title">Vendor-first, always.</h2>
+    <div class="appr">
+      <div class="appr-i"><span><b>I lead with you.</b> Everything starts with what you want — not what I want to sell.</span></div>
+      <div class="appr-i"><span><b>Evidence, not opinion.</b> Your price comes from what the market has actually paid, not a guess.</span></div>
+      <div class="appr-i"><span><b>You're never in the dark.</b> Honest, relentless communication the whole way through.</span></div>
+      <div class="appr-i"><span><b>Your result is my result.</b> I treat your sale like it's my own — because my name's on it too.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="sec sand">
+  <div class="wrap reveal">
+    <p class="eyebrow">What people say</p>
+    <h2 class="title">In their words.</h2>
+    <div class="quotes">
+      <!-- Replace with real vendor quotes -->
+      <blockquote>
+        <p>"[A genuine line from a happy vendor — how you made them feel, and the result you got them.]"</p>
+        <cite>— [Vendor name, suburb]</cite>
+      </blockquote>
+      <blockquote>
+        <p>"[A second quote — ideally one that speaks to your communication or that you went above and beyond.]"</p>
+        <cite>— [Vendor name, suburb]</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 6 QUESTIONS -->
+<section class="sec">
+  <div class="wrap reveal">
+    <div class="cta">
+      <div>
+        <h3>Choosing an agent is a big call.</h3>
+        <p>I've put together the six questions worth asking any agent before you list — including me. No fluff, just what actually matters.</p>
+      </div>
+      <a class="cta-btn" href="https://mani-berwick.github.io/agent-guide" target="_blank" rel="noopener">Read the 6 Questions →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec dark contact">
+  <div class="wrap reveal">
+    <p class="eyebrow">Before we meet</p>
+    <h2 class="title" style="color:var(--on-dark)">Any questions? Just ask.</h2>
+    <p class="lead">If anything comes up before we sit down, call or text me anytime — no question is too small. Otherwise, I'll see you soon, and I'm genuinely looking forward to it.</p>
+    <p class="name">Manpreet Singh</p>
+    <p class="phone"><a href="tel:0452275013">0452 275 013</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span><b>Manpreet Singh</b> · Barry Plant Berwick</span><span>0452 275 013</span></div>
+</footer>
+
+<script>
+(function(){
+  var rev=[].slice.call(document.querySelectorAll('.reveal'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+    rev.forEach(function(el){io.observe(el);});
+  } else { rev.forEach(function(el){el.classList.add('in');}); }
+})();
+</script>
+</body>
+</html>
