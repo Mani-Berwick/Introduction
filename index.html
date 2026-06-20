@@ -31,6 +31,15 @@
   .dark .lead{color:var(--on-dark-soft);}
   p{margin:0 0 1em;}
 
+  /* video */
+  .video-frame{position:relative;width:100%;height:0;padding-bottom:56.25%;background:var(--midnight);border-radius:10px;overflow:hidden;box-shadow:0 30px 70px -34px rgba(0,0,71,.5);border:1px solid var(--sand-line);}
+  .video-frame iframe{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;border:0;display:block;}
+  .video-frame .ph{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;color:var(--on-dark-soft);}
+  .video-frame .ph .play{width:62px;height:62px;border-radius:50%;background:var(--watermelon);display:flex;align-items:center;justify-content:center;}
+  .video-frame .ph .play::after{content:"";border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #fff;margin-left:4px;}
+  .video-frame .ph span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;}
+  .video-cap{text-align:center;margin-top:18px;color:var(--ink-soft);font-size:.92rem;}
+
   html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
   html.js .reveal.in{opacity:1;transform:none;}
 
@@ -125,6 +134,20 @@
   </div>
 </section>
 
+<!-- VIDEO INTRO -->
+<section class="sec">
+  <div class="wrap reveal">
+    <p class="eyebrow">Before we meet</p>
+    <h2 class="title">A quick hello.</h2>
+    <p class="lead">Thought a face and a voice might feel a bit more personal than a paragraph.</p>
+    <div class="video-frame">
+      <!-- Swap YOUR_VIDEO_ID for the YouTube video ID (the part after watch?v= or youtu.be/) -->
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="A note from Manpreet Singh" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="video-cap">Manpreet Singh, Barry Plant Berwick</p>
+  </div>
+</section>
+
 <!-- WHAT TO EXPECT -->
 <section class="sec dark">
   <div class="wrap reveal">
@@ -173,14 +196,12 @@
     <div class="quotes">
       <!-- Replace with real vendor quotes -->
       <blockquote>
-        <p>"We can’t thank Manpreet Singh enough for all the support, guidance, and patience throughout the whole process. He was always professional, approachable, and quick to help whenever we had questions or needed updates. What could have been a stressful experience felt much smoother because of his communication and effort from start to finish.
-
-Highly recommend working with Barry Plant — great people, excellent communication, and a genuinely supportive team."</p>
-        <cite>— [Basant, Seller of a house in Pakenham]</cite>
+        <p>"[A genuine line from a happy vendor — how you made them feel, and the result you got them.]"</p>
+        <cite>— [Vendor name, suburb]</cite>
       </blockquote>
       <blockquote>
-        <p>"I recently sold my property In Berwick with the help from Many from Barry Plant Real Estate. I found Many to be extremely knowledgeable., helpful, and understanding of my situation, he was always available to offer advice, always punctual, he’s kindness took the stress out of selling my home, I would highly recommend him to anyone considering selling their home?]"</p>
-        <cite>— [Nick, Seller of a house in Berwick</cite>
+        <p>"[A second quote — ideally one that speaks to your communication or that you went above and beyond.]"</p>
+        <cite>— [Vendor name, suburb]</cite>
       </blockquote>
     </div>
   </div>
